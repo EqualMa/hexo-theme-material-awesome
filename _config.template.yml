@@ -53,6 +53,7 @@ reading:
 
 # Thumbnail Settings
 thumbnail:
+    auto: true
     purecolor:
     random_amount: 19
 

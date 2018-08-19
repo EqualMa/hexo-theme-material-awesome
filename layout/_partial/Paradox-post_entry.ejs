@@ -1,7 +1,11 @@
 <div class="post_entry-module mdl-card <% if(theme.card_elevation) { %><%= 'mdl-shadow--' + theme.card_elevation + 'dp' %><% } %> mdl-cell mdl-cell--12-col fade out">
+    <% var noThumbnail = false;%>
     <!-- Post Thumbnail -->
     <% if(!post.thumbnail) { %>
-        <% if(!theme.thumbnail.purecolor) { %>
+        <% if(!theme.auto) { %>
+            <% noThumbnail = true %>
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        <% } else if(!theme.thumbnail.purecolor) { %>
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
         <% } else { %>
@@ -14,7 +18,7 @@
     <% } %>
 
         <!-- Post Title -->
-        <p class="article-headline-p"><a href="<%= url_for(post.path) %>"><% if(pin) { %><span>[Top]</span><% } %><%= post.title %></a></p>
+        <p class="article-headline-p" style="<%=noThumbnail?'text-shadow: unset':''%>"><a href="<%= url_for(post.path) %>"><% if(pin) { %><span>[Top]</span><% } %><%= post.title %></a></p>
     </div>
 
     <!-- Post Excerpt -->
