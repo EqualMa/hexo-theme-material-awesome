@@ -67,14 +67,16 @@
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-                <li>
-                <%- list_categories({
-                    show_count: true,
-                    amount: 5,
-                    class: 'sidebar_archives',
-                    style: 'none',
-                    separator: '</li><li>'
-                }) %>
+                
+                <%- showHCategories(getHCategories(), cate => [`
+                    <li>
+                        <a class="sidebar_archives-link" href="${cate.permalink}">
+                            <span>${cate.name}</span>
+                            <span class="sidebar_archives-count">${cate.length}</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        `,
+                        `</ul></li>`]) %>
             </ul>
         </li>
         <% if(theme.sidebar.categories.divider === true) { %>
