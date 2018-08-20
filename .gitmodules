@@ -1,0 +1,3 @@
+[submodule "external_modules/hexo-plugin-hierarchy-category"]
+	path = external_modules/hexo-plugin-hierarchy-category
+	url = git@github.com:EqualMa/hexo-plugin-hierarchy-category.git

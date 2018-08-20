@@ -10,7 +10,7 @@ hexo.extend.helper.register('cssLsload', function(){
   return require("./lib/css_lsload.js").call(hexo,...arguments);
 });
 
-const hCateHelpers = require("./lib/hierarchy_category")(hexo);
+const hCateHelpers = require("../external_modules/hexo-plugin-hierarchy-category/lib/getHCateHelpers")(hexo);
 
 hexo.extend.helper.register("getHCategories", hCateHelpers.getHCategories);
 
