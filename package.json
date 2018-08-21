@@ -1,7 +1,7 @@
 {
-  "name": "hexo-material",
-  "version": "1.5.6",
-  "description": "Material Design Theme for Hexo",
+  "name": "hexo-material-awesome",
+  "version": "1.6.0",
+  "description": "Material Design Theme (Awesome Version by Equal Ma) for Hexo",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "setup": "npm cache clean && npm install",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/viosey/hexo-theme-material.git"
+    "url": "git+https://github.com/EqualMa/hexo-theme-material-awesome.git"
   },
   "keywords": [
     "hexo",
@@ -19,9 +19,9 @@
   "author": "Viosey",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/viosey/hexo-theme-material/issues"
+    "url": "https://github.com/EqualMa/hexo-theme-material-awesome/issues"
   },
-  "homepage": "https://github.com/viosey/hexo-theme-material#readme",
+  "homepage": "https://github.com/EqualMa/hexo-theme-material-awesome#readme",
   "devDependencies": {
     "ejs-lint": "^0.2.0",
     "eslint": "^3.14.0",
