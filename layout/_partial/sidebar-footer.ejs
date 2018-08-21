@@ -15,12 +15,29 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Theme Material -->
 <% if(theme.sidebar.footer.theme === true) { %>
-    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
-        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-            <%= __('misc.theme') %> - Material
-            <span class="sidebar-badge badge-circle">i</span>
-        </div>
-    </a>
+<ul class="nav sidebar-nav">
+<li class="dropdown">
+<a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+    <i class="material-icons sidebar-material-icons">style</i>
+    <%= __('misc.theme') %>
+    <b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+    <li>
+        <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+            <%= __('misc.theme_origin') %> - Material
+            <span class="sidebar-badge badge-circle">M</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/EqualMa/hexo-theme-material-awesome"  class="sidebar-footer-text-a" target="_blank">
+            <%= __('misc.theme_this') %> - Material Awesome
+            <span class="sidebar-badge badge-circle">A</span>
+        </a>
+    </li>
+</ul>
+</li>
+</ul>
 <% } %>
 
 <!-- Help & Support -->

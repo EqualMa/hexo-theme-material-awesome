@@ -27,3 +27,5 @@ title:
 misc:
     home: "Home"
     theme: "Theme"
+    theme_origin: "Origin Version"
+    theme_this: "This Forked Version"
