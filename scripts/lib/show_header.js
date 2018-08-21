@@ -15,6 +15,10 @@ function initHeaderHelper(hexo) {
     }
 
     function getDateString(year, month, day) {
+      if (year === undefined || month === undefined) {
+        return "";
+      }
+
       if (day !== undefined) {
         const relative_date = getHelper("relative_date", self);
         const date = new Date(year, month, day);
