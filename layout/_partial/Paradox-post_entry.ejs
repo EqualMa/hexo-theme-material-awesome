@@ -2,7 +2,7 @@
     <% var noThumbnail = false;%>
     <!-- Post Thumbnail -->
     <% if(!post.thumbnail) { %>
-        <% if(!theme.auto) { %>
+        <% if(!theme.thumbnail.auto) { %>
             <% noThumbnail = true %>
             <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
         <% } else if(!theme.thumbnail.purecolor) { %>
