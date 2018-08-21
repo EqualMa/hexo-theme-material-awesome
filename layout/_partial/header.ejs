@@ -1,0 +1,7 @@
+<% const hHelper = getHeaderHelper(); %>
+<% const show = hHelper.showHeader(); %>
+<div id="header" class="<%- show?'header--show':'header--hide' %>">
+<% if(show) { %>
+    <p class="page-header-text"><%- hHelper.getPageName(page) %></p>
+<% } %>
+</div>

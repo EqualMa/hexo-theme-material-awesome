@@ -15,3 +15,9 @@ const hCateHelpers = require("../external_modules/hexo-plugin-hierarchy-category
 hexo.extend.helper.register("getHCategories", hCateHelpers.getHCategories);
 
 hexo.extend.helper.register("showHCategories", hCateHelpers.showHCategories);
+
+const getHeaderHelper = require("./lib/show_header")(hexo);
+
+hexo.extend.helper.register("getHeaderHelper", function () {
+  return getHeaderHelper(this);
+});
